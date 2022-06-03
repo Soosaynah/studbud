@@ -3,10 +3,58 @@
 <head>
   <title>StudBud by szam7813</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- This metatag allows the website to scale to the size of the screen, making it responsive -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="description" content="" />
+  <link 
+    rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body>
-  <h1>StudBud</h1>
+  <div id="particles-js"></div>
+  <script type="text/javascript" src="particles.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  <div class="container">
+    <div class="timer">
+      <div class="controls">
+        <input id="duration" value="3" />
+        <div>
+          <button id="start"><i class="fas fa-play"></i></button>
+          <button id="pause"><i class="fas fa-pause"></i></button>
+        </div>
+      </div>
+      <svg class="dial">
+        <circle
+          fill="transparent"
+          stroke="green"
+          stroke-width="15"
+          r="190"
+          cx="0"
+          cy="200"
+          transform="rotate(-90 100 100)"
+        />
+      </svg>
+      <h1>JS Made Timer Widget</h1>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+  <!-- <div class="container">
+    <div class="bubble-background"></div>
+    <div class="pomodoro"></div>
+    <div class="task-list"></div>
+    <div class="search"></div>
+    <div class="music"></div>
+  </div> -->
 </body>
 </html>

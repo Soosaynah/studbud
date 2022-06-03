@@ -1,0 +1,28 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #03a9f4, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #03a9f4, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: Poppins;
+}
+
+/* .container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+  
+  .bubble-background { grid-area: 1 / 1 / 5 / 7; }
+  
+  .pomodoro { grid-area: 2 / 4 / 4 / 6; }
+  
+  .task-list { grid-area: 1 / 1 / 4 / 3; }
+  
+  .search { grid-area: 4 / 1 / 5 / 3; }
+  
+  .music { grid-area: 4 / 4 / 5 / 6; }
+   */
