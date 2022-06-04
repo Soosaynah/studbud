@@ -121,4 +121,3 @@ particlesJS('particles-js',
   }
 
 );
-

@@ -1,60 +1,189 @@
+<!-- IMGS from UNSPLASH. MUSIC from ARTLIST.IO. Altered particles.js code. Youtube reference: Web Dev Simplified ("Learn JavaScript Event Listeners In 18 Minutes") , CodingNepal ("Build A Dictionary App in HTML CSS & JavaScript") , TheCodingTrain. 
+  FONTS and ICONS from FONT AWESOME and GOOGLEFONTS. */ -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>StudBud by szam7813</title>
   <meta charset="UTF-8" />
   <!-- This metatag allows the website to scale to the size of the screen, making it responsive -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="description" content="" />
-  <link 
-    rel="stylesheet" href="style.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-    rel="stylesheet"
-  />
+  <!-- Tells internet to use the highest mode available to that version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-is/17.0.2/umd/react-is.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
 </head>
 
 <body>
-  <div id="particles-js"></div>
-  <script type="text/javascript" src="particles.js"></script>
-  <script type="text/javascript" src="app.js"></script>
-
+   <!-- Bubble Background -->
+    
   <div class="container">
-    <div class="timer">
-      <div class="controls">
-        <input id="duration" value="3" />
-        <div>
-          <button id="start"><i class="fas fa-play"></i></button>
-          <button id="pause"><i class="fas fa-pause"></i></button>
+    <div class="bubble-background">
+      <script src="app.js"></script>
+      <div id="particles-js"></div>
+      <script type="text/javascript" src="particles.js"></script>
+      <script type="text/javascript" src="app.js"></script>
+    </div>
+
+      <div class="logo">
+        <img src="img/studbudLogo.png" alt="logo">
+      </div>
+
+      <!-- TASK LIST -->
+      <div class="task-list">
+        <div class="shell">
+          <header>My Tasks</header>
+          <div class="controls">
+            <input type="text" placeholder="Enter new task">
+            <input type="text" placeholder="Enter category" list="categoryList">
+            <datalist id="categoryList">
+              <option value="Personal"></option>
+              <option value="Work"></option>
+            </datalist>
+            <input type="date" id="dateInput">
+            <input type="time" id="timeInput">
+            <button id="addBtn">Add</button>
+            <button id="sortBtn">Sort</button>
+          </div>
+          <div class="task-grid">
+            <table id="todoTable">
+              <tr>
+                <td></td>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Task</td>
+                <td>
+                  <select id="categoryFilter">
+                  </select>
+                </td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+            <script src="todo.js"></script>
         </div>
       </div>
-      <svg class="dial">
-        <circle
-          fill="transparent"
-          stroke="green"
-          stroke-width="15"
-          r="190"
-          cx="0"
-          cy="200"
-          transform="rotate(-90 100 100)"
-        />
-      </svg>
-      <h1>JS Made Timer Widget</h1>
-    </div>
+
+      <!-- DICTIONARY LOOKUP -->
+      <div class="wrapper">
+        <header>My Dictionary</header>
+        <div class="search">
+          <input type="text" placeholder="Search" required spellcheck="false">
+          <i class="fas fa-search"></i>
+          <span class="material-icons">close</span>
+        </div>
+        <p class="info-text">Type a word and press enter to get results</p>
+        <ul>
+          <li class="word">
+            <div class="details">
+              <p>__</p>
+              <span>_ _</span>
+            </div>
+            <i class="fas fa-volume-up"></i>
+          </li>
+          <div class="content">
+            <li class="meaning">
+              <div class="details">
+                <p>Definition</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms">
+              <div class="details">
+                <p>Synonyms</p>
+                <div class="list"></div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- POMODORO -->
+      <progress id="js-progress" value="0"></progress>
+      <div class="progress-bar"></div>
+      <div class="pomodoro">
+        <main class="app">
+          <div class="timer">
+            <div class="button-group mode-buttons" id="js-mode-buttons">
+              <button
+                data-mode="pomodoro"
+                class="button active mode-button"
+                id="js-pomodoro"
+              >
+                Pomodoro
+              </button>
+              <button
+                data-mode="shortBreak"
+                class="button mode-button"
+                id="js-short-break"
+              >
+                Short break
+              </button>
+              <button
+                data-mode="longBreak"
+                class="button mode-button"
+                id="js-long-break"
+              >
+                Long break
+              </button>
+            </div>
+            <div class="clock" id="js-clock">
+              <span id="js-minutes">25</span>
+              <span class="separator">:</span>
+              <span id="js-seconds">00</span>
+            </div>
+            <button class="main-button" data-action="start" id="js-btn">
+              Start
+            </button>
+          </div>
+        </main>
+        <script src="script.js"></script>
+      </div>
+
+      <!-- MUSIC PLAYER -->
+        <div class="music-container" id="music-container">
+         <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+           <div class="progress" id="progress"></div>
+          </div>
+         </div>
+       
+         <audio src="music/Gotta Keep Goin - Milano.mp3" id="audio"></audio>
+       
+         <div class="img-container">
+          <img src="img/Gotta Keep Goin - Milano.jpg" alt="music-cover" id="cover" />
+
+         </div>
+         <div class="navigation">
+          <button id="prev" class="action-btn">
+           <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+           <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+           <i class="fas fa-forward"></i>
+          </button>
+         </div>
+        </div>
+        <script src="music.js"></script>
   </div>
-
-  <script src="app.js"></script>
-
-  <!-- <div class="container">
-    <div class="bubble-background"></div>
-    <div class="pomodoro"></div>
-    <div class="task-list"></div>
-    <div class="search"></div>
-    <div class="music"></div>
-  </div> -->
 </body>
+
 </html>
