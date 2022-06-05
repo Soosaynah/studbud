@@ -72,7 +72,7 @@
 .controls input:focus,
 .controls input.active{
   padding-left: 52px;
-  border: 2px solid #3c87ffd5;
+  border: 2px solid #0066ff;
 }
 .controls input::placeholder{
   color: #bfbfbf;
