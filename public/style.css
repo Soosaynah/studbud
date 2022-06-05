@@ -53,7 +53,7 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    color: #004cbea9;
+    color: #0050c9;
     padding-bottom: 20px;
   }
   .controls {
@@ -72,7 +72,7 @@
 .controls input:focus,
 .controls input.active{
   padding-left: 52px;
-  border: 2px solid #3C87FF;
+  border: 2px solid #3c87ffd5;
 }
 .controls input::placeholder{
   color: #bfbfbf;
@@ -80,7 +80,7 @@
 
 /* Add button */
 .controls #addBtn {
-  background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+  background: linear-gradient(135deg, #0077ff 0%, #0044ff 100%);
   border: none;
   opacity: 0.6;
   outline: none;
@@ -124,7 +124,7 @@
 }
 .strike {
   text-decoration: line-through;
-  color: #2385d5;
+  color: #0066ff;
 }
 td{
   border: 1px solid #ffffff00;
@@ -137,7 +137,7 @@ td{
   /*--------- DICTIIONARY --------- */
   ::selection{
     color: #fff;
-    background: #4D59FB;
+    background: #0050c9;
   }
   .wrapper{
     max-width: 450px;
@@ -152,7 +152,7 @@ td{
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    color: #004cbea9;
+    color: #0050c9;
   }
   .wrapper .search{
     position: relative;
@@ -171,7 +171,7 @@ td{
   }
   .search input:focus{
     padding: 0 41px;
-    border: 2px solid #3C87FF;
+    border: 2px solid #0066ff;
   }
   .search input::placeholder{
     color: #B8B8B8;
@@ -188,7 +188,7 @@ td{
     font-size: 16px;
   }
   .search input:focus ~ i{
-    color: #3C87FF;
+    color: #0066ff;
   }
   .search span{
     right: 15px;
@@ -259,7 +259,7 @@ td{
   .content li .details{
     padding-left: 10px;
     border-radius: 4px 0 0 4px;
-    border-left: 5px solid #3C87FF;
+    border-left: 5px solid #0066ff;
   }
   .content li p{
     font-size: 16px;
@@ -281,9 +281,9 @@ td{
 
   /*--------- POMODORO ---------*/
   :root {
-    --pomodoro: #2385d5;
+    --pomodoro: #0066ff;
     --shortBreak: #a0812c;
-    --longBreak: #563ce7;
+    --longBreak: #783ce7;
   }
   body {
     background-color: var(--pomodoro);
@@ -351,7 +351,7 @@ td{
     font-size: 22px;
     height: 55px;
     text-transform: uppercase;
-    color: #004cbea9;
+    color: #0050c9;
     font-weight: bold;
     width: 200px;
     background-color: white;
@@ -435,14 +435,14 @@ td{
 .action-btn {
 	background-color: rgba(255, 255, 255, 0);
 	border: 0;
-	color: #1559c093;
+	color: #0057c9cb;
 	font-size: 20px;
 	cursor: pointer;
 	padding: 10px;
 	margin: 0 20px;
 }
 .action-btn.action-btn-big {
-	color: #004cbea9;
+	color: #0050c9ec;
 	font-size: 30px;
 }
 .action-btn:focus {
@@ -481,7 +481,7 @@ td{
 	width: 100%;
 }
 .progress {
-	background-color: #004cbea9;
+	background-color: #0050c9ec;
 	border-radius: 5px;
 	height: 100%;
 	width: 0%;

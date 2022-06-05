@@ -4,9 +4,9 @@
 
 Design has a significant focus on iteration and improvement, a key attribute of what makes it timeless and relevant. Feedback on assessment 2 included novel ideas may be too far out for people to get on board with, jarring use of bright red colours may be overwhelming, and loud sounds go against the persona frustrations of enjoying peace and simplicity. Upon receiving feedback on my web designs, I immediately sought to engage with the iteration process.
 
-![comparison between mockup and prototype](docs/comparison.PNG)
+![comparison between mockup and prototype](comparison.png)
 
-The mockup and web prototype differ as I thought it best that keeping a simple web page without having to click into external pages to access the task list, would make the design appear clean and easily navigatable. Using __particles.js__ I altered the javascript to make the particles slower, float to top, is unlinked and is smaller. This mimics bubbles which carries on aspects of my initial design idea of a fish aquarium, but is toned down as to not be confusing. Thus, this creates a pleasing background.
+The mockup and web prototype differ as I thought it best that keeping a simple web page without having to click into external pages to access the task list, would make the design appear clean and easily navigatable. Using __particles.js__ I altered the javascript to make the particles slower, float to top, is unlinked and is smaller. This mimics bubbles which carries on aspects of my initial design idea of a fish aquarium, but is toned down as to not be confusing. Thus, still creates a pleasing background.
 ### JavaScript
 ```JS
      "line_linked": {
@@ -30,9 +30,9 @@ The mockup and web prototype differ as I thought it best that keeping a simple w
         }
       }
 ```
-The mainpage maintained the key component of the pomodoro timer being situated in the middle of the webpage when being translated from mockup to prototype. However, to maintain the illusion of a larger screen, I opted for __transparent and semi transparent backgrounds__ for the pomodoro timer, dictionary, task todo list, and media player. This provides a background for text to be read against as well as help distinguish components of the web application from eacher. Therefore, __improving legibility, contrast and visibility.__ 
+The homepage maintained the key component of the pomodoro timer being situated in the middle of the webpage when being translated from mockup to prototype. However, to maintain the illusion of a larger screen, I opted for __transparent and semi transparent backgrounds__ for the pomodoro timer, dictionary, task todo list, and music player. This provides a background for text to be read against as well as help distinguish components of the web application from each other. Therefore, __improving legibility, contrast and visibility.__ 
 
-A __sticky progress bar__ was created by fixing its position to the top of the web page. This allows it to be accessible and viewable throughout the scrolling process when the web app is viewed in from various device screens that require to scroll down. This bar visually shows the elapsed time from when the pomodoro timer started as well as a visual indicator of the amount of time remaining. 
+A __sticky progress bar__ was created by fixing its position to the top of the web page. This allows it to be accessible and viewable throughout the scrolling process when the web app is viewed from various screen sizes that require to scroll down. This bar __visually shows the elapsed time__ from when the pomodoro timer started as well as a visual indicator of the amount of time remaining. 
 ### CSS
 ```CSS
 /* Progress bar at top of page to show visial indication of elapsed time */
@@ -54,12 +54,12 @@ A __sticky progress bar__ was created by fixing its position to the top of the w
 ```
 
 I have also deisgned a simple StudBud logo and favicon that are visible on the webpage and browser.
-![Studbud logo and favicon](docs/logo.PNG)
+![Studbud logo and favicon](logo.png)
 
 # Reconfiguration for Responsivity
 A responsive website has a fluid and flexible layout that adjusts to various screen sizes. This is crucial in offering an __optimised browsing experience.__ To ensure elements would be able to adjust to specific screens, there was a lot of focus on relative positioning. I also scaled containers, images, backgrounds, margins and text to various mobile resolutions ranging from 1140px to 320px as to ensure responsiveness. 
 
-On horizontal surfaces, people read in a left to right fashion, therefore, landscape view was dominant in desktop and laptop versions of the design. The landscape format enlarges the screen and field of view, making it more dynamic. However, as the website adjusts to smaller devices such as tablets and phones, elements are arranged in columns rather than rows as content on these devices are habitually read top to bottom. Thus, several text elements and containers are centered rather than left aligned, allowing it to be compact on a mobile screen.
+The landscape format enlarges the screen and field of view, making it more dynamic. However, as the website adjusts to smaller devices such as tablets and phones, elements are arranged in columns rather than rows as content on these devices are habitually read top to bottom. Thus, several text elements and containers are centered rather than left aligned, allowing it to be compact on a mobile screen.
 
 When the screen size is less than 768px, the task list moves position form being on the left-hand side to the centre. This is to accomodate the smaller screen size and __scrolling__ as the pomodoro timer is the main attraction. It is a simple, compact design. 
 ### CSS
